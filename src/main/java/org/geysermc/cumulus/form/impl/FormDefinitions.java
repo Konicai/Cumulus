@@ -25,7 +25,6 @@
 
 package org.geysermc.cumulus.form.impl;
 
-import com.google.common.base.Preconditions;
 import java.util.HashMap;
 import java.util.Map;
 import org.geysermc.cumulus.form.Form;
@@ -34,6 +33,7 @@ import org.geysermc.cumulus.form.impl.modal.ModalFormDefinition;
 import org.geysermc.cumulus.form.impl.simple.SimpleFormDefinition;
 import org.geysermc.cumulus.form.util.FormCodec;
 import org.geysermc.cumulus.form.util.FormType;
+import org.geysermc.cumulus.util.Preconditions;
 
 /**
  * This class is not part of the API, so breaking changes can happen.
@@ -85,7 +85,7 @@ public final class FormDefinitions {
   }
 
   private void ensureDefinitionAdded(FormDefinition<?, ?, ?> definition) {
-    Preconditions.checkArgument(addDefinition(definition));
+    Preconditions.checkArgument(addDefinition(definition), "definition not added");
   }
 
   private FormDefinition<?, ?, ?> findDefinition(FormType formType) {

@@ -25,7 +25,6 @@
 
 package org.geysermc.cumulus.component.impl;
 
-import com.google.common.base.Preconditions;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,6 +35,7 @@ import org.checkerframework.checker.index.qual.NonNegative;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.geysermc.cumulus.component.StepSliderComponent;
 import org.geysermc.cumulus.component.util.ComponentType;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class StepSliderComponentImpl extends ComponentImpl implements StepSliderComponent {
   private final List<String> steps;

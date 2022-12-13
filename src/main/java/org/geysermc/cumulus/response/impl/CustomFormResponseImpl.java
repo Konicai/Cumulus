@@ -25,7 +25,6 @@
 
 package org.geysermc.cumulus.response.impl;
 
-import com.google.common.base.Preconditions;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonPrimitive;
 import java.util.Collections;
@@ -38,6 +37,7 @@ import org.geysermc.cumulus.component.util.ComponentType;
 import org.geysermc.cumulus.response.CustomFormResponse;
 import org.geysermc.cumulus.response.result.ResultType;
 import org.geysermc.cumulus.util.AbsentComponent;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class CustomFormResponseImpl extends ResponseToResultGlue
     implements CustomFormResponse {

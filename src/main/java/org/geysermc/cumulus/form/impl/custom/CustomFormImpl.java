@@ -25,7 +25,6 @@
 
 package org.geysermc.cumulus.form.impl.custom;
 
-import com.google.common.base.Preconditions;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -46,6 +45,7 @@ import org.geysermc.cumulus.form.CustomForm;
 import org.geysermc.cumulus.form.impl.FormImpl;
 import org.geysermc.cumulus.response.CustomFormResponse;
 import org.geysermc.cumulus.util.FormImage;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class CustomFormImpl extends FormImpl<CustomFormResponse>
     implements CustomForm {

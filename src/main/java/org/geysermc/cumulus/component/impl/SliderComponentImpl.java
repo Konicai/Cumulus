@@ -25,12 +25,12 @@
 
 package org.geysermc.cumulus.component.impl;
 
-import com.google.common.base.Preconditions;
 import com.google.gson.annotations.SerializedName;
 import org.checkerframework.checker.index.qual.Positive;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.geysermc.cumulus.component.SliderComponent;
 import org.geysermc.cumulus.component.util.ComponentType;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class SliderComponentImpl extends ComponentImpl implements SliderComponent {
   private final float min;

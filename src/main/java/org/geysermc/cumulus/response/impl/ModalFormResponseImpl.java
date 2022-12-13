@@ -25,11 +25,11 @@
 
 package org.geysermc.cumulus.response.impl;
 
-import com.google.common.base.Preconditions;
 import java.util.Objects;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.geysermc.cumulus.response.ModalFormResponse;
 import org.geysermc.cumulus.response.result.ResultType;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class ModalFormResponseImpl extends ResponseToResultGlue implements ModalFormResponse {
   private final int clickedButtonId;

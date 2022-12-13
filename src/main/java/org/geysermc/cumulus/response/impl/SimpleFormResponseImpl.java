@@ -25,12 +25,12 @@
 
 package org.geysermc.cumulus.response.impl;
 
-import com.google.common.base.Preconditions;
 import java.util.Objects;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.geysermc.cumulus.component.ButtonComponent;
 import org.geysermc.cumulus.response.SimpleFormResponse;
 import org.geysermc.cumulus.response.result.ResultType;
+import org.geysermc.cumulus.util.Preconditions;
 
 public final class SimpleFormResponseImpl extends ResponseToResultGlue
     implements SimpleFormResponse {
